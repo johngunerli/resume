@@ -1,0 +1,172 @@
+\documentclass[a4paper,11pt]{extarticle}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks,pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{calc}
+\usepackage[top=0.55in, left=0.57in, right=0.57in]{geometry}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\textheight}{11in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+	\vspace{-7pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+%-------------------------
+% Custom commands
+\newcommand{\resumeSkillItem}[2]{
+	\item\small{
+		\textbf{#1}{: #2 \vspace{-2pt}}
+	}
+}
+
+\newcommand{\resumeItem}[1]{
+	\item\small{
+		#1 \vspace{-1.2pt}
+	}
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+	\item\small{
+		{\vspace{-2pt}}
+	}
+}
+
+\newcommand{\resumeSubheading}[4]{
+	\vspace{-1pt}
+    \item
+		\begin{tabular*}{1\linewidth}{l@{\extracolsep{\fill}}r}
+			\textbf{#1} & #2 \\
+			\textit{#3} & \textit{#4} \\
+		\end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeSkillItem{#1}{#2}\vspace{-5pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{
+    \begin{itemize}[leftmargin=0.15in,label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}\vspace{-3pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
+
+%-----------------------------
+%%%%%%	CV STARTS HERE	%%%%%%
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{{\LARGE John Gunerli}} 
+		& 
+    \underline{\href{https://github.com/hakancangunerli}
+        {github.com/hakancangunerli}}\\
+	\underline{\href{mailto:hakancangunerli@gatech.edu}
+        {hakancangunerli@gatech.edu}}
+		&(470) 388-2623 \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+	\resumeSubHeadingListStart
+		\resumeSubheading
+			{Georgia Institute of Technology}{Atlanta, GA}
+            {B.S. in Computer Science, 
+                CGPA: 3.72 }
+			{Graduating Dec 2023}
+			\vspace{-3pt}
+			{\scriptsize { \footnotesize{\newline{}\textbf{Concentrations:}
+				Machine Learning; Human-Computer Interaction
+			}}}
+			{\scriptsize { \footnotesize{\newline{}\textbf{Courses:}
+                \hspace{}Machine Learning, Artificial Intelligence, Computer Architecture, Data Visualization
+			}}}
+	\resumeSubHeadingListEnd
+\section{Experience}
+	\resumeSubHeadingListStart
+      \resumeSubheading
+            {Georgia Institute of Technology}
+            {Atlanta, GA}
+            {Undergraduate Researcher --- LIDAR Lab}
+            {Aug 2022 -- Present}
+            \resumeItemListStart
+			\resumeItem{Developed a computer vision project using OpenCV's HOG detector for whole-body detection.}
+            \resumeItem{Implemented detection of humans and their distance from the camera..}
+            \resumeItem{Demonstrated the ability to accurately measure the distance of detected humans from the camera.}
+            \resumeItem{Contributed to the development of a real-time human detection system for CASSIE, the GT LIDAR Group's robot system for human trajectory detection.}
+		\resumeItemListEnd   
+     
+		\resumeSubheading
+            {Georgia Institute of Technology \& Emory University}
+            {Remote}
+		    {Undergraduate Student Assistant: Web Development and Architecture}
+            {May 2022 -- Sep 2022}
+		\resumeItemListStart
+			\resumeItem{Designed and built a website from scratch using Typescript, Figma, and React.}
+			\resumeItem{Presented the design to Georgia Tech and Emory University faculty for approval throughout the development process, meeting HIPAA standards and hosted at AWS.}
+   \resumeItem{Gathered and evaluated information from faculty to tailor the website to their needs, including creating visualization dashboards and implementing secure authentication systems for researchers.}
+		\resumeItemListEnd
+
+   
+
+     \resumeSubheading
+            {University of Georgia}
+            {Athens, GA}
+            {Undergraduate Student Assistant: Frontend Lead and Head of UI/UX}
+            {May 2021 -- Jun 2022}
+            \resumeItemListStart
+\resumeItem{Acted as Frontend Development Lead and Undergraduate Student Assistant for the CiliaWeb project, an NSF-funded integrated platform for foundational and reproducible ciliary beat pattern analysis.}
+\resumeItem{Led a team of 3 people in the frontend development department for the project.}
+\resumeItem{Oversaw the complete redesign of the website using Figma, React, Ant Design, and Bootstrap.}
+\resumeItem{Utilized Figma, React, and ExpressJS to create an improved user interface and user experience.}
+\resumeItem{Contributed to the development and architecture of the website.}
+		\resumeItemListEnd   
+
+     \resumeSubheading
+            {Peero}
+            {Remote}
+            {Co-Founding Team \& Startup Technical Program Manager}
+            {Jan 2021 -- Aug 2021}
+		\resumeItemListStart
+\resumeItem{Oversaw product development for the startup, managing projects involving software, hardware, and internal communication..}
+\resumeItem{Led product strategy and roadmap creation, working closely with the business team and in-house designer.}
+\resumeItem{Facilitated agile development and made data-driven decisions to ensure the timely delivery of high-quality products.}
+\resumeItem{Collaborated with CTO on technology development and software build decisions.}
+
+		\resumeItemListEnd
+     \resumeSubheading
+            {Turkiye Is Bankasi}
+            {Remote}
+            {Software Engineering Intern}
+            {Sept 2020 -- Oct 2020}
+		\resumeItemListStart
+\resumeItem{Completed an internship as a Software Engineer at the payment processing team at SoftTech, the software subsidiary of Turkiye Is Bankasi.}
+\resumeItem{Collaborated with a team of 5 software engineers on the development of a Point-of-Sale orchestration platform.}
+\resumeItem{Applied Angular and C\# in the creation of a visual JSON connection program, utilizing the front and backend, respectively.}
+\resumeItem{Utilized MongoDB and .NET systems in the development process.}
+		\resumeItemListEnd
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+		\resumeSubItem{Languages}
+            {\hspace{0.2mm}~~~~~~~Python,C++20,Java,Julia, TypeScript}
+		\resumeSubItem{Tools/Packages}
+            {\hspace{0.3mm}sklearn, Streamlit, Matplotlib, NumPy, BeautifulSoup, Pandas, OpenCV, Figma }
+	\resumeSubHeadingListEnd
+
+\end{document}
